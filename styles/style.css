@@ -449,6 +449,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 2rem;
 }
 
 .info-section2 .info-pic {
@@ -476,7 +477,7 @@ textarea {
 
 .spa-pic {
   max-width: 40rem;
-  max-height: 60rem;
+  max-height: 55rem;
 }
 
 .banner {
@@ -614,9 +615,9 @@ textarea {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 35rem;
-  height: 40rem;
+  height: 50rem;
   max-width: 40rem;
-  max-height: 40rem;
+  max-height: 50rem;
   margin-right: 2rem;
 }
 
@@ -629,9 +630,9 @@ textarea {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 35rem;
-  height: 40rem;
+  height: 50rem;
   max-width: 40rem;
-  max-height: 40rem;
+  max-height: 50rem;
   margin-right: 0rem;
 }
 
@@ -1035,6 +1036,22 @@ footer ul {
   br {
     display: none;
   }
+  .trip-info {
+    display: none;
+  }
+  .elena img {
+    width: 35rem;
+    height: 40rem;
+    max-width: 35rem;
+    max-height: 40rem;
+    margin-right: 0rem;
+  }
+  .elena2 img {
+    width: 35rem;
+    height: 40rem;
+    max-width: 35rem;
+    max-height: 40rem;
+  }
 }
 
 /*Media query for small and mid sized phones section  */
@@ -1082,6 +1099,48 @@ footer ul {
     margin-right: 4rem;
     display: none;
   }
+  .info-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-section .info-text {
+    margin-left: 0rem;
+  }
+  .info-section .info-pic {
+    margin-right: 0rem;
+  }
+  .info-section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-section2 .info-text {
+    margin-left: 0rem;
+  }
+  .info-section2 .info-pic {
+    margin-left: 0rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1098,6 +1157,12 @@ footer ul {
   }
   .hero {
     margin-top: 2rem;
+  }
+  .luis-info .title {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.4rem;
   }
 }
 
