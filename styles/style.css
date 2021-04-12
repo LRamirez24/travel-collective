@@ -465,6 +465,7 @@ textarea {
   color: black;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .discover {
