@@ -1453,6 +1453,7 @@ footer ul {
   cursor: pointer;
   font-size: 1.6rem;
   border: 1px solid black;
+  background-color: transparent;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
