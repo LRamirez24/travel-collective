@@ -113,8 +113,8 @@ textarea {
 
 .bg {
   /* The image used */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url("/images/lady.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("/images/lady.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url("/images/pexels-ajay-donga-2174656.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("/images/pexels-ajay-donga-2174656.jpg");
   /* Full height */
   height: 100%;
   min-height: 90vh;
@@ -222,6 +222,11 @@ textarea {
   color: black;
 }
 
+nav li a:hover {
+  -webkit-text-decoration: underline 1px solid white;
+          text-decoration: underline 1px solid white;
+}
+
 .social-header,
 .boxes {
   display: none;
@@ -245,7 +250,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 8rem;
+  margin-top: 10rem;
   margin-bottom: 11rem;
 }
 
@@ -911,7 +916,7 @@ footer ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 14rem;
+    margin-top: 20rem;
     margin-bottom: 9rem;
   }
   .hero .luis-info {
