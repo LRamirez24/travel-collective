@@ -6,6 +6,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -17,6 +18,8 @@ body {
     height: 100vh;
     // font-family: 'Quicksand', sans-serif;
     font-family: 'Cormorant Infant', serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ul {
@@ -107,18 +110,42 @@ textarea {
     display: inline-block;
 }
 
-.bg {
-    /* The image used */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('/images/pexels-ajay-donga-2174656.jpg');
-    /* Full height */
-    height: 100%;
-    min-height: 90vh;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-}
+// .bg {
+//     /* The image used */
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('/images/pexels-ajay-donga-2174656.jpg');
+//     /* Full height */
+//     height: 100%;
+//     min-height: 90vh;
+//     /* Center and scale the image nicely */
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     z-index: 0;
+// }
+
+// .video{
+//     position: absolute;
+//     top: 0;
+//     z-index: -1;
+//     video{
+//     max-width: 100%; 
+//     max-height: 100%;
+//     min-height: 90vh;
+    
+//     }
+// }
+
+video {
+    object-fit: cover;
+    // width: 100vw;
+    // height: 100vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
 
 /* base style for navbar & title */
@@ -530,6 +557,44 @@ nav li a:hover {
     // border-radius: 40px;
 }
 
+
+//ticker
+
+
+.js-ticker {
+    width: 100vw;
+    min-height: 50vh;
+    height: 50vh;
+    position: relative;
+    pointer-events: none;
+    // margin-top: 10rem;
+  }
+  
+  .js-ticker .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    white-space: nowrap;
+    padding: 0;
+    will-change: transform;
+  }
+  
+  .js-ticker li {
+    list-style: none;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 50px;
+    color: black;
+    font-weight: 300;
+    font-size: 10vw;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20rem;
+    font-family: 'Cormorant Infant', serif;
+  }
+
+
+
 //form section
 @mixin flex($justify,
 $align,
@@ -548,6 +613,7 @@ $direction) {
     margin-top: 12rem;
     margin-bottom: 8rem;
 }
+
 
 form {
     padding: 3rem 10rem;
@@ -958,6 +1024,11 @@ footer ul {
 /*Media query for small and mid sized phones section  */
 
 @media only screen and (max-width: 425px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
     .doodles2 {
         display: none;
     }
@@ -997,6 +1068,7 @@ footer ul {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        margin-top: 4rem;
         .info-text {
             margin-left: 0rem;
             // margin-top: 12rem;
@@ -1237,3 +1309,5 @@ footer ul {
         color: white;
     }
 }
+
+
