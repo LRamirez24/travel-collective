@@ -661,6 +661,7 @@ nav li a:hover {
   height: 50vh;
   position: relative;
   pointer-events: none;
+  overflow-x: hidden;
 }
 
 .js-ticker .wrapper {
